@@ -1,10 +1,10 @@
 import { ReactElement, useEffect, useReducer } from "react";
 
-import OrderContext, { initialContext } from "./context";
-import type { ContextType } from "./context";
+import OrderContext, { initialContext } from "./contextInfo";
+import type { ContextType } from "./contextInfo";
 import { reducer } from "./reducer";
-import { initialState } from "./state";
-import { INewOrder, IRestaurant, ITargetRestaurant } from ".";
+import { initialState } from "../initialState";
+import { INewOrder, IRestaurant, ITargetRestaurant } from "..";
 import axiosClient from "libs/axios";
 
 const OrderProvider = ({

@@ -5,9 +5,11 @@ import { useNavigate } from "react-router-dom";
 
 export default function OrderTypePage() {
   const navigate = useNavigate();
+
   const handleDeliveryBtnClick = () => {
     navigate("/food-type");
   };
+  
   const handlePickupBtnClick = () => {
     navigate("/food-type");
   };

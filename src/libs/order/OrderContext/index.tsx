@@ -1,8 +1,8 @@
-export { default as OrderProvider } from "./provider";
-export { default as useOrder } from "./useOrder";
+export { default as OrderProvider } from "./context/provider";
+export { default as useOrder } from "./context/useOrder";
 
-export type { ContextType } from "./context";
-export { default as OrderContext } from "./context";
+export type { ContextType } from "./context/contextInfo";
+export { default as OrderContext } from "./context/contextInfo";
 
 export type {
   AudioInputDeviceInfo,

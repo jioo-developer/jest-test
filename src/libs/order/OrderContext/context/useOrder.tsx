@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import OrderContext from "./context";
+import OrderContext from "./contextInfo";
 
 const useOrder = () => useContext(OrderContext);
 

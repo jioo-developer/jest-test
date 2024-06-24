@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
-import { State, initialState } from "./state";
-import { INewOrder, IRestaurant, ITargetRestaurant } from ".";
+import { State, initialState } from "../initialState";
+import { INewOrder, IRestaurant, ITargetRestaurant } from "..";
 
 /** Context */
 export type ContextType = State & {

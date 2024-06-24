@@ -17,7 +17,7 @@ export default function RestaurantListPage() {
   const { data: restaurantList } = useRestaurantList(
     foodTypeId ? parseInt(foodTypeId) : 0
   );
-
+  // 컴포넌트 성능측정 함수
   function onRender(
     id,
     phase,
@@ -33,6 +33,8 @@ export default function RestaurantListPage() {
     console.log("startTime: ", startTime);
     console.log("commitTime: ", commitTime);
   }
+  // 컴포넌트 성능측정 함수
+
   return (
     <Profiler id="restaurantList" onRender={onRender}>
       <Wrapper data-cy="restaurantWrapper">
